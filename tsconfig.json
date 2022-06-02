@@ -1,0 +1,13 @@
+{
+  "extends": "@aroleaf/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@lib/*": ["src/lib/*"],
+      "@env": [".env.json"]
+    },
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
